@@ -21,19 +21,4 @@ print("hello")
 print('world')
 print("你说：'早上你好'")
 print('我说："今天天气不错"')
-# print("你微笑着'向我打招呼" .')  # 错误用法
-
-
-# 单行注释
-print("hell world") # 打印hello world
-
-"""
-功能：自动化测试
-作者：虫师
-日期：2018-03-09
-"""
-
-'''
-This is a
-Multi line comment
-'''
+# print("你微笑着'向我打招呼" .')
