@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <platform>
+        <os>Windows</os>
+        <os>Linux</os>
+        <os>macOS</os>
+    </platform>
+    <browsers>
+        <browser>Firefox</browser>
+        <browser>Chrome</browser>
+        <browser>Edge</browser>
+    </browsers>
+    <url>http://www.xxxx.com</url>
+    <users>
+        <login username="admin" password="123456"/>
+        <login username="guest" password="654321"/>
+    </users>
+</config>

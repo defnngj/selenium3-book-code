@@ -1,0 +1,6 @@
+﻿用户名,密码,断言
+,123,请输入帐号
+user,,请输入密码
+error,error,帐号或密码错误
+admin,admin123,admin你好
+guest,guest123,guest你好
