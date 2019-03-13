@@ -1,0 +1,20 @@
+[
+  "pytest_sample/test_assert.py::test_add_1",
+  "pytest_sample/test_assert.py::test_add_2",
+  "pytest_sample/test_assert.py::test_add_3",
+  "pytest_sample/test_assert.py::test_add_4",
+  "pytest_sample/test_assert.py::test_in",
+  "pytest_sample/test_assert.py::test_not_in",
+  "pytest_sample/test_assert.py::test_true_1",
+  "pytest_sample/test_assert.py::test_true_2",
+  "pytest_sample/test_assert.py::test_true_3",
+  "pytest_sample/test_assert.py::test_true_4",
+  "pytest_sample/test_assert.py::test_false_1",
+  "pytest_sample/test_fixtures_01.py::test_multiply_3_4",
+  "pytest_sample/test_fixtures_01.py::test_multiply_a_3",
+  "pytest_sample/test_fixtures_02.py::TestDemo::()::test_numbers_5_6",
+  "pytest_sample/test_fixtures_02.py::TestDemo::()::test_strings_b_2",
+  "pytest_sample/test_sample.py::test_answer",
+  "test_run_demo.py::test_fail_01",
+  "test_run_demo.py::test_fail_02"
+]
