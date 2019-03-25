@@ -91,6 +91,7 @@ driver.find_element_by_css_selector("form.fm > span > input.s_ipt")
 driver.find_element_by_css_selector("form#form > span > input#kw")
 
 # 7、更多定位用法
-driver.find_element_by_css_selector("[class~=bg]")
-driver.find_element_by_css_selector("[class|=bg]")
+driver.find_element_by_css_selector("[class*=s_ipt_wr]")
+driver.find_element_by_css_selector("[class^=bg]")
+driver.find_element_by_css_selector("[class$=wrap]")
 driver.find_element_by_css_selector("form > input:nth-child(2)")
