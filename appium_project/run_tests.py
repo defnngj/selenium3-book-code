@@ -15,6 +15,6 @@ if __name__ == '__main__':
     with(open(test_report, 'wb')) as fp:
         runner = HTMLTestRunner(stream=fp,
                                 title="魅族社区APP测试报告",
-                                description="运行环境：Windows 10, Chrome浏览器")
+                                description="运行环境：Android 7.0")
         runner.run(suit)
 

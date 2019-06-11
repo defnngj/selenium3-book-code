@@ -20,7 +20,7 @@ class TestBaidu(unittest.TestCase):
     @data(["case1", "selenium"], ["case2", "ddt"], ["case3", "python"])
     @unpack
     def test_search1(self, case, search_key):
-        print("第一组:用例：", case)
+        print("第一组测试用例：", case)
         self.baidu_search(search_key)
         self.assertEqual(self.driver.title, search_key + "_百度搜索")
 
@@ -28,22 +28,24 @@ class TestBaidu(unittest.TestCase):
     @data(("case1", "selenium"), ("case2", "ddt"), ("case3", "python"))
     @unpack
     def test_search2(self, case, search_key):
-        print("第二组:用例：", case)
+        print("第二组测试用例：", case)
         self.baidu_search(search_key)
         self.assertEqual(self.driver.title, search_key + "_百度搜索")
 
     # 参数化使用方式三
-    @data({"search_key": "selenium"}, {"search_key": "ddt"}, {"search_key": "python"})
+    @data({"search_key": "selenium"},
+          {"search_key": "ddt"},
+          {"search_key": "python"})
     @unpack
     def test_search3(self, search_key):
-        print("第三组:用例：", search_key)
+        print("第三组测试用例：", search_key)
         self.baidu_search(search_key)
         self.assertEqual(self.driver.title, search_key + "_百度搜索")
 
     # 参数化读取JSON文件
     @file_data('ddt_data_file.json')
     def test_search4(self, search_key):
-        print("第四组:用例：", search_key)
+        print("第四组测试用例：", search_key)
         self.baidu_search(search_key)
         self.assertEqual(self.driver.title, search_key + "_百度搜索")
 
@@ -51,9 +53,10 @@ class TestBaidu(unittest.TestCase):
     @file_data('ddt_data_file.yaml')
     def test_search5(self, case):
         search_key = case[0]["search_key"]
-        print("第五组:用例：", search_key)
+        print("第五组测试用例：", search_key)
         self.baidu_search(search_key)
         self.assertEqual(self.driver.title, search_key + "_百度搜索")
+
     @classmethod
     def tearDownClass(cls):
         cls.driver.quit()
