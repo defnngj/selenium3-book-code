@@ -19,7 +19,7 @@ driver.find_element_by_id("su").click()
 # submit 提交表单
 search_text = driver.find_element_by_id('kw')
 search_text.send_keys('selenium')
-seearch.submit()
+search_text.submit()
 
 # 获得输入框的尺寸
 size = driver.find_element_by_id('kw').size
