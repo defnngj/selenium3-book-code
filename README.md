@@ -7,6 +7,20 @@
 ## 书中错误
 注：p代表page, 10 代表页数
 
+#### p46
+
+绝对路径定位：
+```python
+find_element_by_xpath("/html/body/div/div[2]/div/div/div/from/span/input")
+find_element_by_xpath("/html/body/div/div[2]/div/div/div/from/span[2]/input")
+```
+修改为：
+```python
+find_element_by_xpath("/html/body/div/div[2]/div/div/div/form/span/input")
+find_element_by_xpath("/html/body/div/div[2]/div/div/div/form/span[2]/input")
+```
+
+
 #### p54
 
 submit()的使用例子：
