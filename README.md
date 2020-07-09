@@ -20,6 +20,33 @@ find_element_by_xpath("/html/body/div/div[2]/div/div/div/form/span/input")
 find_element_by_xpath("/html/body/div/div[2]/div/div/div/form/span[2]/input")
 ```
 
+#### p48
+
+* text()的使用
+
+错误一
+
+```python
+find_element_by_xpath("//a[text(), '新闻']")
+```
+
+修改为：
+```
+find_element_by_xpath("//a[text()='新闻']")
+```
+
+错误二
+
+```python
+find_element_by_xpath("//a[contains(text(), '一个很长的')]")
+```
+
+修改为：
+
+```python
+find_element_by_xpath("//a[contains(text()='一个很长的')]")
+```
+
 
 #### p54
 
