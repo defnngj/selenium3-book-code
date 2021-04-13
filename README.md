@@ -20,6 +20,16 @@ find_element_by_xpath("/html/body/div/div[2]/div/div/div/form/span/input")
 find_element_by_xpath("/html/body/div/div[2]/div/div/div/form/span[2]/input")
 ```
 
+#### p47
+
+```python
+find_element_by_xpath("//span[@class='bg s_ipt_wt']")
+```
+修改为：
+```python
+find_element_by_xpath("//span[@class='s_ipt_wt']")
+```
+
 #### p48
 
 * text()的使用
@@ -103,10 +113,15 @@ sleep(2)
 driver.quit()
 ```
 
+#### p77 ~ 78
+4.17 处理HTML5视频播放 (新印刷版中去掉)
+
+> Chrome浏览器（以及所有以Chromium为内核的浏览器）和firefox浏览器已不再允许自动播放音频和视频。所以无法直接通过JS出发H5视频播放。
+
 #### p79 ~ 81
 4.18 小节 滑动解锁 
 
-1. 滑动解锁的例子失效，暂未找到很好的替代的例子，新印刷版中去掉。
+1. 滑动解锁的例子失效，暂未找到很好的替代的例子，(新印刷版中去掉)。
 2. 标题修改为"滑动操作"
 3. 滑动操作日历的例子替换为：
 
