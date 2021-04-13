@@ -8,6 +8,9 @@ from selenium import webdriver
 driver = webdriver.Chrome()
 
 driver.get("http://www.jq22.com/yanshi4976")
+driver.set_page_load_timeout(2)
+driver.set_script_timeout(2)
+
 sleep(2)
 driver.switch_to.frame("iframe")
 driver.find_element_by_id("appDate").click()

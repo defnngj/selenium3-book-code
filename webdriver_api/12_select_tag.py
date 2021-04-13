@@ -9,26 +9,26 @@ from selenium.webdriver.support.select import Select
 from time import sleep
 
 driver = webdriver.Chrome()
-driver.get('https://www.baidu.com')
+driver.get('https://www.w3school.com.cn/tiy/t.asp?f=eg_html_select')
+driver.set_page_load_timeout(2)
+driver.set_script_timeout(2)
 
-# 打开搜索设置
-link = driver.find_element_by_link_text('设置').click()
-driver.find_element_by_link_text("搜索设置").click()
+# 切换表单
+driver.switch_to.frame("iframeResult")
+
+# 定位select标签
+sel = driver.find_element_by_tag_name("select")
+
+# value="saab"
+Select(sel).select_by_value('saab')
 sleep(2)
 
-# 搜索结果显示条数
-sel = driver.find_element_by_xpath("//select[@id='nr']")
-
-# value="20"
-Select(sel).select_by_value('20')
-sleep(2)
-
-# <option>每页显示50条</option>
-Select(sel).select_by_visible_text("每页显示50条")
+# <option>Opel</option>
+Select(sel).select_by_visible_text("Opel")
 sleep(2)
 
 # 根据选项的索引选择
-Select(sel).select_by_index(0)
+Select(sel).select_by_index(3)
 sleep(2)
 
 driver.quit()
